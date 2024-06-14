@@ -15,12 +15,22 @@ const AppBar = () => {
       <TouchableOpacity onPress={() => navigation.navigate('Posts')}>
         <Text style={styles.button}>Posts</Text>
       </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('AddPost')}>
+        <Text style={styles.button}>Postar</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+        <Text style={styles.button}>Login</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={() => navigation.navigate('Camera')}>
+        <Text style={styles.button}>Camera</Text>
+      </TouchableOpacity>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    marginTop: 42,
     flexDirection: 'row',
     justifyContent: 'space-around',
     alignItems: 'center',
